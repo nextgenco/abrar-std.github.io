@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 23/01/2019 09:05
+    Creation date: 20/03/2019 02:18
     */
 
     @font-face {
@@ -37,20 +37,18 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-doctor:before { content: "\f100"; }
-.flaticon-stethoscope:before { content: "\f101"; }
-.flaticon-ambulance:before { content: "\f102"; }
-.flaticon-24-hours:before { content: "\f103"; }
-.flaticon-experiment-results:before { content: "\f104"; }
-.flaticon-heart-rate:before { content: "\f105"; }
-.flaticon-dropper:before { content: "\f106"; }
-.flaticon-first-aid-kit:before { content: "\f107"; }
+    .flaticon-ideas:before { content: "\f100"; }
+.flaticon-flasks:before { content: "\f101"; }
+.flaticon-analysis:before { content: "\f102"; }
+.flaticon-ux-design:before { content: "\f103"; }
+.flaticon-web-design:before { content: "\f104"; }
+.flaticon-idea:before { content: "\f105"; }
+.flaticon-innovation:before { content: "\f106"; }
     
-    $font-Flaticon-doctor: "\f100";
-    $font-Flaticon-stethoscope: "\f101";
-    $font-Flaticon-ambulance: "\f102";
-    $font-Flaticon-24-hours: "\f103";
-    $font-Flaticon-experiment-results: "\f104";
-    $font-Flaticon-heart-rate: "\f105";
-    $font-Flaticon-dropper: "\f106";
-    $font-Flaticon-first-aid-kit: "\f107";
+    $font-Flaticon-ideas: "\f100";
+    $font-Flaticon-flasks: "\f101";
+    $font-Flaticon-analysis: "\f102";
+    $font-Flaticon-ux-design: "\f103";
+    $font-Flaticon-web-design: "\f104";
+    $font-Flaticon-idea: "\f105";
+    $font-Flaticon-innovation: "\f106";
