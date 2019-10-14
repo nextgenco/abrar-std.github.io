@@ -1,242 +1,268 @@
- AOS.init({
- 	duration: 800,
- 	easing: 'slide',
- 	once: true
- });
+/* -----------------------------------------------
+					Js Main
+--------------------------------------------------
 
-jQuery(document).ready(function($) {
+    Template Name: Baha - Personal Portfolio Template
+    Author: Malyarchuk
+    Copyright: 2019
 
-	"use strict";
+--------------------------------------------------
 
+Table of Content
+
+	1. Preloader
+	2. Sound Start
+	3. Isotope Portfolio Setup
+	4. Blogs Masonry Setup
+	5. Active Current Link
+	6. Mobile Toggle Click Setup
+	7. Testimonials OwlCarousel
+	8. Chart Setup
+	9. Portfolio Tilt Setup
+	10. Portfolio Image Link
+	11. Portfolio Video Link
+	12. Blog Video Link
+	13. Validate Contact Form
+	14. Google Map
+
+----------------------------------- */
+
+$(window).on('load', function() {
+		
+	/* -----------------------------------
+				1. Preloader
+	----------------------------------- */
+	$("#preloader").delay(1000).addClass('loaded');
 	
-
-	var siteMenuClone = function() {
-
-		$('.js-clone-nav').each(function() {
-			var $this = $(this);
-			$this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
+	/* -----------------------------------
+			  2. Sound Setup
+	----------------------------------- */
+	$('body').append('<audio loop autoplay volume="1" id="audio-player"><source src="music.mp3" type="audio/mpeg"></audio>');
+    	var audio = document.getElementById("audio-player");
+    	audio.volume = 0.2;
+	
+	if($(window).length) {
+		$('.music-bg').css({'visibility':'visible'});
+		$('body').addClass("audio-on");
+		if ($('body').hasClass('audio-off')) {
+        	$('body').removeClass('audio-on');
+		} 
+		$(".music-bg").on('click', function() {
+			$('body').toggleClass("audio-on audio-off");         
+			if ($('body').hasClass('audio-off')) {
+				audio.pause();
+			} 
+			if ($('body').hasClass('audio-on')) {
+				audio.play();
+			}
 		});
+	}
+	
+	/* -----------------------------------
+			3. Isotope Portfolio Setup
+	----------------------------------- */
+    if( $('.portfolio-items').length ) {
+        var $elements = $(".portfolio-items"),
+            $filters = $('.portfolio-filter ul li');
+        $elements.isotope();
 
-
-		setTimeout(function() {
-			
-			var counter = 0;
-      $('.site-mobile-menu .has-children').each(function(){
-        var $this = $(this);
-        
-        $this.prepend('<span class="arrow-collapse collapsed">');
-
-        $this.find('.arrow-collapse').attr({
-          'data-toggle' : 'collapse',
-          'data-target' : '#collapseItem' + counter,
+        $filters.on('click', function(){
+            $filters.removeClass('active');
+            $(this).addClass('active');
+            var selector = $(this).data('filter');
+            $(".portfolio-items").isotope({
+                filter: selector,
+                hiddenStyle: {
+                    transform: 'scale(.2) skew(30deg)',
+                    opacity: 0
+                },
+                visibleStyle: {
+                    transform: 'scale(1) skew(0deg)',
+                    opacity: 1,
+                },
+                transitionDuration: '.5s'
+            });
         });
+    }
+	
+	/* -----------------------------------
+			4. Blogs Masonry Setup
+	----------------------------------- */
+    $('.blog-masonry').isotope({ layoutMode: 'moduloColumns' });
+	
+});
 
-        $this.find('> ul').attr({
-          'class' : 'collapse',
-          'id' : 'collapseItem' + counter,
-        });
-
-        counter++;
-
-      });
-
-    }, 1000);
-
-		$('body').on('click', '.arrow-collapse', function(e) {
-      var $this = $(this);
-      if ( $this.closest('li').find('.collapse').hasClass('show') ) {
-        $this.removeClass('active');
-      } else {
-        $this.addClass('active');
-      }
-      e.preventDefault();  
-      
+$(document).ready(function() {
+    "use strict";
+	
+	/* -----------------------------------
+			5. Active Current Link
+	----------------------------------- */
+    $('.header-main ul li a').on('click',function() {
+        if($('.header-main.on').length) {
+            $('.header-main').removeClass('on');
+        }
     });
-
-		$(window).resize(function() {
-			var $this = $(this),
-				w = $this.width();
-
-			if ( w > 768 ) {
-				if ( $('body').hasClass('offcanvas-menu') ) {
-					$('body').removeClass('offcanvas-menu');
-				}
-			}
-		})
-
-		$('body').on('click', '.js-menu-toggle', function(e) {
-			var $this = $(this);
-			e.preventDefault();
-
-			if ( $('body').hasClass('offcanvas-menu') ) {
-				$('body').removeClass('offcanvas-menu');
-				$this.removeClass('active');
-			} else {
-				$('body').addClass('offcanvas-menu');
-				$this.addClass('active');
-			}
-		}) 
-
-		// click outisde offcanvas
-		$(document).mouseup(function(e) {
-	    var container = $(".site-mobile-menu");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	      if ( $('body').hasClass('offcanvas-menu') ) {
-					$('body').removeClass('offcanvas-menu');
-				}
-	    }
-		});
-	}; 
-	siteMenuClone();
-
-
-	var sitePlusMinus = function() {
-		$('.js-btn-minus').on('click', function(e){
-			e.preventDefault();
-			if ( $(this).closest('.input-group').find('.form-control').val() != 0  ) {
-				$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) - 1);
-			} else {
-				$(this).closest('.input-group').find('.form-control').val(parseInt(0));
-			}
-		});
-		$('.js-btn-plus').on('click', function(e){
-			e.preventDefault();
-			$(this).closest('.input-group').find('.form-control').val(parseInt($(this).closest('.input-group').find('.form-control').val()) + 1);
-		});
-	};
-	// sitePlusMinus();
-
-
-	var siteSliderRange = function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
+	
+	/* -----------------------------------
+		6. Mobile Toggle Click Setup
+	----------------------------------- */
+    $('.header-toggle').on('click', function() {
+        $('.header-main').toggleClass('on');
     });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-	};
-	// siteSliderRange();
+	
+	/* -----------------------------------
+	      7. Testimonials OwlCarousel
+	----------------------------------- */
+	$(".testimonial .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        smartSpeed: 500,
+        responsiveClass: true,
+        dots: false,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            800: {
+                items: 1,
+            },
+            1000: {
+                items: 2,
+            },
+        },
+    });
+	
+	/* -----------------------------------
+	      	8. Chart Setup
+	----------------------------------- */
+	if ($('.chart').length > 0) {
+	    $('.chart').easyPieChart({
+          trackColor:'#0e0f10',
+	      scaleColor:false,
+	      easing: 'easeOutBounce',
+	      scaleLength: 4,
+	      lineCap: 'square',
+	      lineWidth:5,
+	      size:130,
+	      animate: {
+	                duration: 2500,
+	                enabled: true
+	    	}
+	 	});
+	 }
+	
+	/* -----------------------------------
+	      	9. Portfolio Tilt Setup
+	----------------------------------- */
+    $('.pt-portfolio .portfolio-items .item figure').tilt({
+        maxTilt: 3,
+        glare: true,
+        maxGlare: .6,
+        reverse: true
+    });
+	
+	/* -----------------------------------
+	      10. Portfolio Image Link
+	----------------------------------- */
+	$(".portfolio-items .image-link").magnificPopup({
+		type: "image"
+	});
+	
+	/* -----------------------------------
+	      11. Portfolio Video Link
+	----------------------------------- */
+	$(".portfolio-items .video-link").magnificPopup({
+		type: "iframe"
+	});
+	
+	/* -----------------------------------
+	      12. Blog Video Link
+	----------------------------------- */
+	$(".pt-blog .blog-item .thumbnail .btn-play").magnificPopup({
+		type: "iframe"
+	});
+	
+	/* -----------------------------------
+	    13. Validate Contact Form
+	----------------------------------- */
+	if ($("#contact-form").length) {
+        $("#contact-form").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
 
-
-	var siteMagnificPopup = function() {
-		$('.image-popup').magnificPopup({
-	    type: 'image',
-	    closeOnContentClick: true,
-	    closeBtnInside: false,
-	    fixedContentPos: true,
-	    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-	     gallery: {
-	      enabled: true,
-	      navigateByImgClick: true,
-	      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-	    },
-	    image: {
-	      verticalFit: true
-	    },
-	    zoom: {
-	      enabled: true,
-	      duration: 300 // don't foget to change the duration also in CSS
-	    }
-	  });
-
-	  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-	    disableOn: 700,
-	    type: 'iframe',
-	    mainClass: 'mfp-fade',
-	    removalDelay: 160,
-	    preloader: false,
-
-	    fixedContentPos: false
-	  });
-	};
-	siteMagnificPopup();
-
-
-	var siteCarousel = function () {
-		if ( $('.nonloop-block-13').length > 0 ) {
-			$('.nonloop-block-13').owlCarousel({
-		    center: false,
-		    items: 1,
-		    loop: true,
-				stagePadding: 0,
-		    margin: 0,
-		    autoplay: true,
-		    nav: true,
-				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
-		    responsive:{
-	        600:{
-	        	margin: 0,
-	        	nav: true,
-	          items: 2
-	        },
-	        1000:{
-	        	margin: 0,
-	        	stagePadding: 0,
-	        	nav: true,
-	          items: 3
-	        },
-	        1200:{
-	        	margin: 0,
-	        	stagePadding: 0,
-	        	nav: true,
-	          items: 4
-	        }
-		    }
-			});
-		}
-
-		$('.slide-one-item').owlCarousel({
-	    center: false,
-	    items: 1,
-	    loop: true,
-			stagePadding: 0,
-	    margin: 0,
-	    autoplay: true,
-	    pauseOnHover: false,
-	    nav: true,
-	    navText: ['<span class="icon-keyboard_arrow_left">', '<span class="icon-keyboard_arrow_right">']
-	  });
-	};
-	siteCarousel();
-
-	var siteStellar = function() {
-		$(window).stellar({
-	    responsive: false,
-	    parallaxBackgrounds: true,
-	    parallaxElements: true,
-	    horizontalScrolling: false,
-	    hideDistantElements: false,
-	    scrollProperty: 'scroll'
-	  });
-	};
-	siteStellar();
-
-	var siteCountDown = function() {
-
-		$('#date-countdown').countdown('2020/10/10', function(event) {
-		  var $this = $(this).html(event.strftime(''
-		    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
-		    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
-		    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
-		    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
-		    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
-		});
+                email: "required",
 				
-	};
-	siteCountDown();
+            },
 
-	var siteDatePicker = function() {
+            messages: {
+                name: "Please enter your name",
+                email: "Please enter your email address"
+            },
 
-		if ( $('.datepicker').length > 0 ) {
-			$('.datepicker').datepicker();
-		}
+            submitHandler: function (form) {
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(form).serialize(),
+                    success: function () {
+                        $( "#loader").hide();
+                        $( "#success").slideDown( "slow" );
+                        setTimeout(function() {
+                        $( "#success").slideUp( "slow" );
+                        }, 3000);
+                        form.reset();
+                    },
+                    error: function() {
+                        $( "#loader").hide();
+                        $( "#error").slideDown( "slow" );
+                        setTimeout(function() {
+                        $( "#error").slideUp( "slow" );
+                        }, 3000);
+                    }
+                });
+                return false;
+            }
 
-	};
-	siteDatePicker();
+        });
+    }
+	
+	/* Google Map Setup */
+    if($('#map').length) {
+        initMap();
+     };
 
 });
+
+/* -----------------------------------
+  		14. Google Map
+----------------------------------- */
+function initMap() {
+    var latitude = $("#map").data('latitude'),
+        longitude = $("#map").data('longitude'),
+        zoom = $("#map").data('zoom'),
+        cordinates = new google.maps.LatLng(latitude, longitude);
+
+    var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
+	
+        var mapOptions = {
+        zoom: zoom,
+        center: cordinates,
+        mapTypeControl: false,
+        disableDefaultUI: true,
+        zoomControl: true,
+        scrollwheel: false,
+        styles: styles
+    };
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    var marker = new google.maps.Marker({
+        position: cordinates,
+        map: map,
+        title: "We are here!"
+    });
+}
