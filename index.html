@@ -1,1234 +1,792 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
-		
-		<!-- Meta -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		
-		<!-- Title -->
-		<title>Abrar Ahmed - Personal Portfolio</title>
+    <meta charset="utf-8">
+    <title>Abrar A. | Personal Resume</title>
+    <!-- Stylesheets -->
+    <link href="css\bootstrap.css" rel="stylesheet">
+    <link href="css\style.css" rel="stylesheet">
+    <link href="css\responsive.css" rel="stylesheet">
 
-		<!-- CSS Plugins -->
-        <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
-        <link rel="stylesheet" href="css/plugins/font-awesome.css">
-		<link rel="stylesheet" href="css/plugins/magnific-popup.css">
-		<link rel="stylesheet" href="css/plugins/simplebar.css">
-		<link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
-		<link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
-		<link rel="stylesheet" href="css/plugins/jquery.animatedheadline.css">
-		
-		<!-- CSS Base -->
-        <link rel="stylesheet" class="back-color" href="css/style-dark.css">
-		<link rel="stylesheet" href="css/style-demo.css">
-		
-		<!-- Settings Style -->
-		<link rel="stylesheet" class="posit-nav" href="css/settings/left-nav.css" />
-		<link rel="stylesheet" class="theme-color" href="css/settings/green-color.css" />
-		<link rel="stylesheet" class="box-st" href="css/settings/circle-box.css" />
-		
-    </head>
-    <body>
-		
-		<!--Theme Options Start-->
-        <div class="style-options">
-            <div class="toggle-btn">
-                <span><i class="fas fa-cog"></i></span>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images\favicon.png" type="image/x-icon">
+    <link rel="icon" href="images\favicon.png" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <div class="container">
+                <!--Nav Outer-->
+                <div class="nav-outer clearfix">
+                    <div class="logo"><a href="index.html"><img src="images\logo.png" alt=""></a></div>
+                    <!-- Main Menu -->
+                    <nav class="main-menu-outer">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse scroll-nav clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="current"><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#resume">Resume</a></li>
+                                <li><a href="#work">Works</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                </div>
+                <!--Nav Outer End-->
             </div>
-            <div class="style-menu">
-                <div class="style-nav">
-                    <h4 class="mt-15 mb-10">Menu Position</h4>
-                    <ul>
-						<li><a href="css/settings/top-nav.css"><i class="fas fa-caret-up"></i> Top</a></li>
-                        <li><a href="css/settings/left-nav.css"><i class="fas fa-caret-left"></i> Left</a></li>
-                        <li><a href="css/settings/right-nav.css"><i class="fas fa-caret-right"></i> Right</a></li>
-                        <li><a href="css/settings/bottom-nav.css"><i class="fas fa-caret-down"></i> Bottom</a></li>
-                    </ul>
-                </div>
-				<div class="style-back">
-                    <h4 class="mt-85 mb-10">Style Color</h4>
-                    <ul>
-                        <li><a href="css/style-dark.css"><i class="fas fa-moon"></i> Dark</a></li>
-                        <li><a href="css/style-light.css"><i class="far fa-lightbulb"></i> Light</a></li>
-                    </ul>
-                </div>
-				<div class="style-box">
-                    <h4 class="mt-55 mb-10">Box Style</h4>
-                    <ul>
-						<li><a href="css/settings/hexagon-box.css"><i class="fab fa-jira"></i> Hexagon</a></li>
-                        <li><a href="css/settings/circle-box.css"><i class="fas fa-dot-circle"></i> Circle</a></li>
-                    </ul>
-                </div>
-				<div class="style-color">
-                    <h4 class="mt-55 mb-10">Theme Color</h4>
-                    <ul>
-                        <li><a href="css/settings/green-color.css" style="background-color: #25ca7f;"></a></li>
-						<li><a href="css/settings/blue-color.css" style="background-color: #00a3e1;"></a></li>
-                        <li><a href="css/settings/red-color.css" style="background-color: #d94c48;"></a></li>
-                        <li><a href="css/settings/purple-color.css" style="background-color: #bb68c8;"></a></li>
-						<li><a href="css/settings/sea-color.css" style="background-color: #0dcdbd;"></a></li>
-                        <li><a href="css/settings/yellow-color.css" style="background-color: #eae328;"></a></li>
-                    </ul>
-                </div>
-            </div>
-		</div>
-		
-		<!-- Preloader -->
-		<div id="preloader">
-  			<div class="loading-area">
-    			<div class="circle"></div>
-  			</div>
-  			<div class="left-side"></div>
-  			<div class="right-side"></div>
-		</div>
-		
-		<!-- Main Site -->
-		<div id="home">
-  		<div id="about">
-    	<div id="resume">
-     	<div id="portfolio">
-        <div id="blog">
-		<div id="contact">
-			
-			<div class="header-mobile">
-                <a class="header-toggle"><i class="fas fa-bars"></i></a>
-                <h2>Abrar Ahmed</h2>
-            </div>
-			
-			<!-- Left Block -->
-			<nav class="header-main" data-simplebar>
-		
-				<!-- Logo -->
-				<div class="logo">
-            		<img src="img/logo.png" alt="">
-            	</div>
-				
-          		<ul>
-					<li data-tooltip="home" data-position="top">
-            			<a href="#home" class="icon-h fas fa-house-damage"></a>
-					</li>
-					<li data-tooltip="about" data-position="top">
-            			<a href="#about" class="icon-a fas fa-user-tie"></a>
-					</li>
-					<li data-tooltip="resume" data-position="top">
-            			<a href="#resume" class="icon-r fas fa-address-book"></a>
-					</li>
-					<li data-tooltip="portfolio" data-position="top">
-            			<a href="#portfolio" class="icon-p fas fa-briefcase"></a>
-					</li>
-					<li data-tooltip="blog" data-position="top">
-            			<a href="#blog" class="icon-b fas fa-receipt"></a>
-					</li>
-					<li data-tooltip="contact" data-position="bottom">
-						<a href="#contact" class="icon-c fas fa-envelope"></a>
-					</li>
-          		</ul>
-				
-				<!-- Sound wave -->
-    			<a class="music-bg">
-      				<div class="lines">
-        				<span></span>
-        				<span></span>
-        				<span></span>
-        				<span></span>
-						<span></span>
-						<span></span>
-      				</div>
-					<p> Sound </p>
-    			</a>
-			 </nav>
-			
-			<!-- Home Section -->
-          	<div class="pt-home" style="background-image: url('img/home-bg.jpg')">
-				
-				<!-- Background Line -->
-				<div class="bg-lines">
-  					<div class="bg-line"></div>
-  					<div class="bg-line"></div>
-  					<div class="bg-line"></div>
-					<div class="bg-line"></div>
-					<div class="bg-line"></div>
-  				</div>
-				
-             	<section>
-					
-					<!-- Banner -->
-					<div class="banner">
-  						<h1>Abrar Ahmed</h1>
-						<p class="cd-headline rotate-1">
-							<span>I am a</span>
-							<span class="cd-words-wrapper">
-								<b class="is-visible">Developer</b>
-								<b>Photographer</b>
-								<b>Designer</b>
-								<b>Freelancer</b>
-							</span>
-						</p>
-					</div>
-					
-					<!-- Language -->
-					<div class="lang">
-                		<ul>
-                   			<li><a href="#" class="active">eng</a></li>
-                		</ul>
-            		</div>
-		
-					<!-- Social -->
-					<div class="social">
-            			<ul>
-                			<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            			</ul>
-        			</div>
-			  	</section>  
-          	</div>
-			
-			<!-- About Section -->
-			<div class="page pt-about" data-simplebar>
-				<section class="container">
-					
-					<!-- Section Title -->
-					<div class="header-page mt-70 mob-mt">
-						<h2>About Me</h2>
-						<span></span>
-					</div>
-				
-					<!-- Personal Info Start -->
-					<div class="row mt-100">
-					
-						<!-- Information Block -->
-						<div class="col-lg-12 col-sm-12">
-    						<div class="info box-1">
-								<div class="row">
-									<div class="col-lg-3 col-sm-4">
-										<div class="photo">
-											<img alt="" src="img/user-photo.jpg">		
-										</div>	
-									</div>
-									<div class="col-lg-9 col-sm-8">
-										<h4>Abrar Ahmed</h4>
-										<div class="loc">
-											<i class="fas fa-map-marked-alt"></i> Jhang Sadar, Pakistan
-										</div>
-										<p>Hello! I’m Abrar Ahmed a self-taught & award winning Digital Designer & Developer with over five years  work experience. I started in my children’s room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in Jhang, Pakistan, working for Apple fredmansky and enjoying the life in the countryside.
-										</p>
-										<p>I have couple of hobbies but I like to travel. I have already travelled almost all the districts of our country with my father. I am fond of fruit.
-										</p>
-									</div>
-									
-									<!-- Icon Info -->
-									<div class="col-lg-3 col-sm-4">
-                                		<div class="info-icon">
-                                     		<i class="fas fa-award"></i>
-                                     		<div class="desc-icon">
-												<h6>5 Years Job</h6>
-                                            	<p>Experience</p>
-                                       		</div>
-                                		</div>
-                                	</div>
-									
-									<!-- Icon Info -->
-									<div class="col-lg-3 col-sm-4">
-                                		<div class="info-icon">
-                                     		<i class="fas fa-certificate"></i>
-                                     		<div class="desc-icon">
-												<h6>50+ Projects</h6>
-                                            	<p>Completed</p>
-                                      		</div>
-                                		</div>
-                                	</div>
-									
-									<!-- Icon Info -->
-									<div class="col-lg-3 col-sm-4">
-                                		<div class="info-icon">
-                                     		<i class="fas fa-user-astronaut"></i>
-                                     		<div class="desc-icon">
-												<h6>Freelance</h6>
-                                           		<p>Available</p>
-                                        	</div>
-                                		</div>
-                                	</div>
-									<div class="col-lg-3 col-sm-12 pt-50">
-                                		<a href="files/Resume - Abrar Ahmed.pdf" target="_blank"  class="btn-st" >Download CV</a>
-                                	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<!-- Interests Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>My Interests</h3>
-							</div>
-						</div>
-					
-						<div class="col-lg-12 col-sm-12">
-							<div class="box-2">
-								<div class="row">
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                     		<i class="fas fa-music"></i>
-                                    	 	<div class="desc-inter">
-												<h6>Naats</h6>
-                               	        	</div>
-										</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                     		<i class="fas fa-route"></i>
-                                     		<div class="desc-inter">
-												<h6>Travelling</h6>
-                                       		</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                 	    	<i class="far fa-image"></i>
-                                  		   	<div class="desc-inter">
-												<h6>Photos</h6>
-                                  	     	</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                    	 	<i class="fas fa-film"></i>
-                                     		<div class="desc-inter">
-												<h6>Movies</h6>
-                                   	    	</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                 	    	<i class="fas fa-space-shuttle"></i>
-                                 	    	<div class="desc-inter">
-												<h6>Space</h6>
-                                	       	</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-                                    	 	<i class="fas fa-book"></i>
-                                     		<div class="desc-inter">
-												<h6>Books</h6>
-                                    	   	</div>
-                                		</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-        	                             	<i class="fas fa-gamepad"></i>
-            	                         	<div class="desc-inter">
-												<h6>Video games</h6>
-                    	                   	</div>
-                        	        	</div>
-									</div>
-								
-									<!-- Interests Item -->
-									<div class="col-lg-3 col-sm-6">
-										<div class="inter-icon">
-        	                             	<i class="fas fa-tree"></i>
-            	                         	<div class="desc-inter">
-												<h6>Forest</h6>
-                    	                   	</div>
-                        	        	</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Service Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>Services</h3>
-							</div>
-						</div>
-					
-						<!-- Service Item -->
-						<div class="col-lg-6 col-sm-6">
-							<div class="service box-1 mb-40">
-								<i class="fas fa-desktop"></i>
-								<h4>Web Design</h4>
-								<p>The different areas of web design include web graphic design; interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
-							</div>
-						</div>
-
-						<!-- Service Item -->
-						<div class="col-lg-6 col-sm-6">
-							<div class="service box-2 mb-40">
-								<i class="fas fa-cogs"></i>
-								<h4>Web Development</h4>
-								<p>Web development can range from developing a simple single static page of plain text to complex web-based internet applications, electronic businesses, and social network services.</p>
-							</div>
-						</div>
-
-						<!-- Service Item -->
-						<div class="col-lg-6 col-sm-6">
-							<div class="service box-2 mb-40">
-								<i class="fas fa-mobile-alt"></i>
-								<h4>Mobile UI/UX Design</h4>
-								<p>UI design is centered on layout and the fine detail of how the user interacts with the product (i.e a slide vs. a simple tap on an app).</p>
-							</div>
-						</div>
-
-						<!-- Service Item -->
-						<div class="col-lg-6 col-sm-6">
-							<div class="service box-1 mb-40">
-								<i class="fas fa-medkit"></i>
-								<h4>Presentation Design</h4>
-								<p>Affordable Presentation Design Services. Powerpoint expert designer services and get your presentation design project done within 24hr.</p>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Testimonial Row Start -->
-					<div class="row testimonial mt-60">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>Testimonials</h3>
-							</div>
-						</div>
-						
-						<div class="owl-carousel owl-theme">
-	
-							<!-- Testimonail Item -->
-							<div class="testimonial-item">
-								<div class="media">
-									<img src="img/testimonials/testimonial-1.jpg" alt="">
-									<div class="content">
-										<h4>Victoria Janes</h4>
-										<p>Design & Development</p>
-									</div>
-									<ul class="rating">
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-                                 	</ul>
-								</div>
-								<div class="comment pt-30">
-									<p>
-										Abrar has completed many design projects for me, 
-										his design skills are great and has an eagerness to work hard and hit deadlines. 
-										I would be happy to recommend Abrar as I have has nothing but a great experience working with him. Thank you :)
-									</p>
-								</div>
-							</div>
-
-							<!-- Testimonail Item -->
-							<div class="testimonial-item">
-								<div class="media">
-									<img src="img/testimonials/testimonial-2.jpg" alt="">
-									<div class="content">
-										<h4>Doron Peleg</h4>
-										<p>Pitch Deck Design</p>
-									</div>
-									<ul class="rating">
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star-half"></i></li>
-                                 	</ul>
-								</div>
-								<div class="comment pt-30">
-									<p>
-										Genuinely really pleased with how responsive and available Abrar always is, 
-										and delivers great quality. I will continue to use 
-										Abrar for future work and recommend him to others. Thank you
-									</p>
-								</div>
-							</div>
-						
-							<!-- Testimonail Item -->
-							<div class="testimonial-item">
-								<div class="media">
-									<img src="img/testimonials/testimonial-3.jpg" alt="">
-									<div class="content">
-										<h4>Yana Lapitskaya</h4>
-										<p>Yay! Starter Marketing</p>
-									</div>
-									<ul class="rating">
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-										<li><i class="far fa-star"></i></li>
-                                 	</ul>
-								</div>
-								<div class="comment pt-30">
-									<p>
-										Abrar was very nice and helpful, his attitude was wonderful and 
-										he did the job well in the shortest possible time. Good value for money too!
-										I can recommend Abrar to everyone who wants to have a decent presentation and 
-										will work with him again.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Price Row Start -->
-					<div class="row mt-100 mb-60">
-						
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-90">
-								<h3>Price</h3>
-							</div>
-						</div>
-					
-						<!-- Price Item -->
-						<div class="col-lg-4 col-sm-12">
-							<div class="price box-1">
-								<div class="head-price">
-									<i class="fa fa-user"></i>
-									<h4>Basic</h4>
-								</div>
-								<div class="body-price">
-									<div class="price-plan">
-										<span class="currency">$</span>
-										<span class="number">25</span>
-										<span class="period">hourly</span>
-									</div>
-									<div class="list-price">
-										<ul>
-											<li>Web Design</li>
-											<li>Web Development</li>
-											<li class="disable">Responsive Design</li>
-											<li class="disable">Game Development</li>
-										</ul>
-									</div>
-								</div>
-								<div class="footer-price">
-									<a href="#" class="btn-st">Buy Now</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Price Item -->
-						<div class="col-lg-4 col-sm-12">
-							<div class="price box-2">
-								<div class="head-price">
-									<i class="fa fa-briefcase"></i>
-									<h4>Standard</h4>
-								</div>
-								<div class="body-price">
-									<div class="price-plan">
-										<span class="currency">$</span>
-										<span class="number">40</span>
-										<span class="period">hourly</span>
-									</div>
-									<div class="list-price">
-										<ul>
-											<li>Web Design</li>
-											<li>Web Development</li>
-											<li>Responsive Design</li>
-											<li class="disable">Game Development</li>
-										</ul>
-									</div>
-								</div>
-								<div class="footer-price">
-									<a href="#" class="btn-st">Buy Now</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Price Item -->
-						<div class="col-lg-4 col-sm-12">
-							<div class="price box-1">
-								<div class="head-price">
-									<i class="fa fa-globe"></i>
-									<h4>Premium</h4>
-								</div>
-								<div class="body-price">
-									<div class="price-plan">
-										<span class="currency">$</span>
-										<span class="number">55</span>
-										<span class="period">hourly</span>
-									</div>
-									<div class="list-price">
-										<ul>
-											<li>Web Design</li>
-											<li>Web Development</li>
-											<li>UI/UX Design</li>
-											<li>Responsive Design</li>
-										</ul>
-									</div>
-								</div>
-								<div class="footer-price">
-									<a href="#" class="btn-st">Buy Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-			  	</section>
-         	</div>
-			 
-			<!-- Resume Section -->
-          	<div class="page pt-resume" data-simplebar>
-            	<section class="container">
-					
-					<!-- Section Title -->
-					<div class="header-page mt-70 mob-mt">
-						<h2>Resume</h2>
-    					<span></span>
-					</div>
-					
-					<!-- Experience & Education Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Experience Column Start -->
-						<div class="col-lg-6 col-sm-12">
-						
-							<!-- Header Block -->
-							<div class="header-box mb-50">
-								<h3>Experience</h3>
-							</div>
-						
-							<div class="experience box-1">
-								
-								<!-- Experience Item -->
-								<div class="item">
-									<div class="main">
-										<h4>Front-End Developer & Designer</h4>
-										<p><i class="far fa-calendar-alt"></i>2018 - 2019 | Victoria Jane Assists</p>
-									</div>
-									<p>Remotely working for Victoria Jane Assists since 2018, Completed a number of Web Development and Web Designing Projects, created different digital illustrations as well.</p>
-								</div>
-
-								<!-- Experience Item -->
-								<div class="item">
-									<div class="main">
-										<h4>Management Director & Tutor</h4>
-										<p><i class="far fa-calendar-alt"></i>2016 - 2018 | Suffah Islamic School, Jhang</p>
-									</div>
-									<p>Teaching Intermediate Level Students the basics of Object Oriencted Programming with an additional role as the Management Director of the institute.</p>
-								</div>
-
-								<!-- Experience Item -->
-								<div class="item">
-									<div class="main">
-										<h4>UI/UX Designer</h4>
-										<p><i class="far fa-calendar-alt"></i>2014 - 2016 | Mint Monee</p>
-									</div>
-									<p>Mint Monee is a Foreign Money Exchange Service, I've worked here as a UI/UX Designer, Pitch Deck Designer & Illustrator for more than 2 years and helped them successfully achieving their startup goals.</p>
-								</div>
-							</div>
-						</div>
-							
-						<!-- Education Column Start -->
-						<div class="col-lg-6 col-sm-12">
-						
-							<!-- Header Block -->
-							<div class="header-box mb-50 mob-box-mt">
-								<h3>Education</h3>
-							</div>
-						
-							<div class="experience box-2">
-
-								<!-- Education Item -->
-								<div class="item">
-									<div class="main">
-										<h4>BS(Software Engineering)</h4>
-										<p><i class="far fa-calendar-alt"></i>2016 - 2020 | Computer Sciences</p>
-									</div>
-									<p>Virtual University of Pakistan - In final semester, holding a CGPA of 3.75/4.00, Learned Problem Solving Skills, Programming with C++, C#, Java, JavaScript, HTML5, CSS3, React.Js & Flutter for Mobile Development.</p>
-								</div>
-
-								<!-- Education Item -->
-								<div class="item">
-									<div class="main">
-										<h4>ICS(Intermidate Computer Sciences)</h4>
-										<p><i class="far fa-calendar-alt"></i>2014 - 2016 | Computer Sciences</p>
-									</div>
-									<p>Ghazali Science College, Jhang - Ranked as the Toper of the institute, Learned the basics of programming with C & C++, Studiet Object Oriented Programming and Developed basic Porblem Solving Skills.</p>
-								</div>
-
-								<!-- Education Item -->
-								<div class="item">
-									<div class="main">
-										<h4>Graphic Designing</h4>
-										<p><i class="far fa-calendar-alt"></i>2016 - 2018 | Digital Graphics</p>
-									</div>
-									<p>Digiskills.pk & Ignites - Featured at Digiskills.pk Learned Advanced Graphic Designing skils and tools like Adobe Photoshope, Adobe Illustrator, Adobe XD(for UI/UX Designing) and CorelDraw Graphics Suire.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Skills Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>Skills</h3>
-							</div>
-						</div>
-					</div>
-					
-					<div class="box-1 skills">
-						<div class="row">
-							<div class="col-lg-6 col-sm-6">
-
-								<!-- Skill Item -->
-								<div class="skill-item">
-									<h4 class="progress-title">HTML5</h4>
-									<div class="progress">
-										<div class="progress-bar" style="width:98%">
-											<div class="progress-value">98%</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Skill Item -->
-								<div class="skill-item">
-									<h4 class="progress-title">CSS3</h4>
-									<div class="progress">
-										<div class="progress-bar" style="width:85%">
-											<div class="progress-value">85%</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Skill Item -->
-								<div class="skill-item">
-									<h4 class="progress-title">JavaScript</h4>
-									<div class="progress">
-										<div class="progress-bar" style="width:90%">
-											<div class="progress-value">90%</div>
-										</div>
-									</div>
-								</div>
-							
-								<!-- Skill Item -->
-								<div class="skill-item">
-									<h4 class="progress-title">UI/UX designer</h4>
-									<div class="progress">
-										<div class="progress-bar" style="width:77%">
-											<div class="progress-value">77%</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-sm-6">
-								<div class="row">
-									
-									<!-- Skill Item -->
-									<div class="col-lg-6 col-sm-6">
-										<div class="chart" data-percent="80" data-bar-color="#fff"> 80% <p>Java</p></div>
-									</div>
-									
-									<!-- Skill Item -->
-									<div class="col-lg-6 col-sm-6">
-										<div class="chart" data-percent="70" data-bar-color="#fff"> 70% <p>Illustrator</p></div>
-									</div>
-									
-									<!-- Skill Item -->
-									<div class="col-lg-6 col-sm-6">
-										<div class="chart" data-percent="60" data-bar-color="#fff"> 60% <p>Photoshop</p></div>
-									</div>
-									
-									<!-- Skill Item -->
-									<div class="col-lg-6 col-sm-6">
-										<div class="chart" data-percent="90" data-bar-color="#fff"> 90% <p>ReactJS</p></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-					<!-- Work Process Row Start -->
-					<div class="row mt-100">
-					
-						<!-- Header Block -->
-						<div class="col-md-12">
-							<div class="header-box mb-50">
-								<h3>My Working Process</h3>
-							</div>
-						</div>
-					</div>
-					
-					<div class="box-2 work-process mb-100">
-						<div class="row">
-							<div class="col-lg-4 col-sm-12 ltr">
-							
-                    			<!-- Working Process Item-->
-                          	 	<div class="single-wp width-sm process-1">
-									<p class="wp-step">01</p>
-									<h4 class="wp-title">Discuss idea</h4>
-									<p>First of all, I discuss the business idea with my client to gather as much as information about the project as possible.</p>
-								</div>
-
-								<!-- Working Process Item-->
-								<div class="single-wp width-sm process-2">
-									<p class="wp-step">02</p>
-									<h4 class="wp-title">Creative concept</h4>
-									<p>In the second phase, I do the brain storming & make a creative concept of all the information collected from the client.</p>
-								</div>
-							</div>
-					
-							<div class="col-lg-4 hidden-sm">
-							
-								<!-- Working Process Circle-->
-								<div class="wp-circle">
-									<h4>Working Process</h4>
-									<span class="dots top-l"></span>
-									<span class="dots bottom-l"></span>
-									<span class="dots top-r"></span>
-									<span class="dots bottom-r"></span>
-								</div>
-							</div>
-					
-							<div class="col-lg-4 col-sm-12 rtl">
-						
-								<!-- Working Process Item-->
-								<div class="single-wp width-sm process-3">
-									<p class="wp-step">03</p>
-									<h4 class="wp-title">Web concept</h4>
-									<p>After the verification of the concept, I develop the Web Design and work on it till the customer is satisified with it</p>
-								</div>
-	
-								<!-- Working Process Item-->
-								<div class="single-wp width-sm process-4">
-									<p class="wp-step">04</p>
-									<h4 class="wp-title">Final concept</h4>
-									<p>At the End, I describe the final concept for the last time for better understanding of the solution to the problem.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-			  	</section>
-         	</div>
-			 
-			<!-- Portfolio Section -->
-          	<div class="page pt-portfolio" data-simplebar>
-            	<section class="container">
-					
-					<!-- Section Title -->
-					<div class="header-page mt-70 mob-mt">
-						<h2>Portfolio</h2>
-    					<span></span>
-					</div>
-					
-					<!-- Portfolio Filter Row Start -->
-					<div class="row mt-100">
-						<div class="col-lg-12 col-sm-12 portfolio-filter">
-							<ul>
-								<li class="active" data-filter="*">All</li>
-								<li data-filter=".brand">Brand</li>
-								<li data-filter=".design">Design</li>
-								<li data-filter=".graphic">Graphic</li>
-							</ul>
-						</div>
-					</div>
-					
-					<!-- Portfolio Item Row Start -->
-					<div class="row portfolio-items mt-100 mb-100">
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 graphic">
-							<figure>
-								<img alt="" src="img/portfolio/img-1.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Graphic</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-1.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-2.jpg">
-									<figcaption>
-									<h3>Project Name</h3>
-									<p>Design</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-2.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 brand">
-							<figure>
-								<img alt="" src="img/portfolio/img-3.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Graphic</p><i class="fas fa-video"></i>
-									<a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 graphic">
-							<figure>
-								<img alt="" src="img/portfolio/img-4.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Design</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-4.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-5.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Design</p><i class="fas fa-video"></i>
-									<a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 brand">
-							<figure>
-								<img alt="" src="img/portfolio/img-6.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-6.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 graphic">
-							<figure>
-								<img alt="" src="img/portfolio/img-7.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-7.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-8.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-8.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 brand">
-							<figure>
-								<img alt="" src="img/portfolio/img-9.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Graphic</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-9.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-10.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-8.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-11.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-8.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-12.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-8.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-						<!-- Portfolio Item -->
-						<div class="item col-lg-4 col-sm-6 design">
-							<figure>
-								<img alt="" src="img/portfolio/img-13.jpg">
-								<figcaption>
-									<h3>Project Name</h3>
-									<p>Brand</p><i class="fas fa-image"></i>
-									<a class="image-link" href="img/portfolio/img-8.jpg"></a>
-								</figcaption>
-							</figure>
-						</div>
-					</div>
-				</section>
-       	   	</div>
-			 <!-- Blog Section -->
-          	<div class="page pt-blog" data-simplebar>
-            	<section class="container">
-					
-					<!-- Section Title -->
-             		<div class="header-page mt-70 mob-mt">
-						<h2>Blog</h2>
-    					<span></span>
-					</div>
-					
-					<!-- Blog Row Start -->
-					<div class="row blog-masonry mt-100 mb-50">
-						
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-1.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">15 April 2019</a></li>
-                            		<li><a href="#">Lifestyle</a></li>
-                           		</ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-2.jpg"></a>
-									<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">10 March 2019</a></li>
-                            		<li><a href="#">Lifestyle</a></li>
-                           		</ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-3.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">02 March 2019</a></li>
-                            		<li><a href="#">Work</a></li>
-                            	</ul>
-								<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-4.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                            		<li><a href="#">29 March 2019</a></li>
-                            		<li><a href="#">Career</a></li>
-                            	</ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-5.jpg"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-									<li><a href="#">14 April 2019</a></li>
-                            		<li><a href="#">Lifestyle</a></li>
-                            	</ul>
-								<p>Tower Hamlets or mass or members of propaganda bananas real estate. However, a large and a mourning, vel euismod.</p>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-
-						<!-- Blog Item -->
-						<div class="col-lg-4 col-sm-6">
-							<div class="blog-item">
-								<div class="thumbnail">
-									<a href="single-blog.html"><img alt="" src="img/blog/img-6.jpg"></a>
-									<a href="https://www.youtube.com/watch?v=k_okcNVZqqI" class="btn-play"></a>
-								</div>
-								<h4><a href="single-blog.html">Road to success</a></h4>
-								<ul>
-                           		 	<li><a href="#">29 April 2019</a></li>
-                           		 	<li><a href="#">Career</a></li>
-                        	    </ul>
-								<div class="blog-btn">
-									<a href="single-blog.html" class="btn-st">Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-            	</section>
-			</div>
-			 
-			<!-- Contact Section -->
-         	<div class="page pt-contact" data-simplebar>
-            	<section class="container">
-					
-					<!-- Section Title -->
-              		<div class="header-page mt-70 mob-mt">
-						<h2>Contact</h2>
-    					<span></span>
-					</div>
-					
-					<!-- Form Start -->
-					<div class="row mt-100">
-						<div class="col-lg-12 col-sm-12">
-							<div class="contact-form ">
-                        		<form method="post" class="box-1 contact-valid" id="contact-form">
-									<div class="row">
-                            			<div class="col-lg-6 col-sm-12">
-                                			<input type="text" name="name" id="name" class="form-control" placeholder="Name *">
-                            			</div>
-                            			<div class="col-lg-6 col-sm-12">
-                                			<input type="email" name="_replyto" id="email" class="form-control" placeholder="Email *">
-                            			</div>
-                            			<div class="col-lg-12 col-sm-12">
-                                			<textarea class="form-control" name="note"  id="note" placeholder="Your Message"></textarea>
-                            			</div>
-                             			<div class="col-lg-12 col-sm-12 text-center">
-                                			<button type="submit" class="btn-st">Send Message</button>
-                                			<div id="loader">
-                                    			<i class="fas fa-sync"></i>
-                                			</div>
-                            			</div>
-										<div class="col-lg-12 col-sm-12">
-                            				<div class="error-messages">
-                                				<div id="success">
-													<i class="far fa-check-circle"></i>Thank you, your message has been sent.
-												</div>
-                                				<div id="error">
-													<i class="far fa-times-circle"></i>Error occurred while sending email. Please try again later.
-												</div>
-											</div>
-                            			</div>
-									</div>
-                    			</form>
-                    		</div>
-						</div>
-					</div>
-					
-					<!-- Contact Info -->
-					<div class="box-2 contact-info">
-						<div class="row">
-							<div class="col-lg-4 col-sm-12 info">
-								<i class="fas fa-paper-plane"></i>
-         						<p>abr.std7@gmail.com</p>
-          						<span>Email</span>
-							</div>
-							<div class="col-lg-4 col-sm-12 info">
-								<i class="fas fa-map-marker-alt"></i>
-         						<p>Jhang Sadar, Pakistan</p>
-          						<span>Addres</span>
-							</div>	
-							<div class="col-lg-4 col-sm-12 info">
-								<i class="fas fa-phone"></i>
-         						<p>(+92) 340 790 9920</p>
-          						<span>Phone</span>
-							</div>	
-						</div>
-					</div>
-					
-					<!--Google Map Start-->
-					<div class="google-map box-1 mt-100 mb-100">
-						<div class="row">
-							<div class="col-lg-12">
-								<div id="map" data-latitude="31.2781" data-longitude="72.3317" data-zoom="14"></div>
-							</div>
-						</div>
-					</div>
-            	</section>
-          	</div> 
-			
         </div>
-      	</div>
-    	</div>
-  		</div>
-		</div>
-		</div>
-		
-		<!-- All Script -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/isotope.pkgd.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/simplebar.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.animatedheadline.min.js"></script>
-		<script src="js/jquery.easypiechart.js"></script>
-		<script src="js/jquery.validation.js"></script>
-		<script src="js/tilt.js"></script>
-        <script src="js/main.js"></script>
-		<script src="js/main-demo.js"></script>
-        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
-		
-    </body>
+
+        <div class="card-outer">
+            <div class="page-background">
+                <div class="portfolio-bg">
+                    <!-- Background -->
+                    <div class="image active" style="background-image:url(images/background/bg-1.jpg)"></div>
+                    <div class="image" style="background-image:url(images/background/bg-2.jpg)"></div>
+                    <div class="image" style="background-image:url(images/background/bg-3.jpg)"></div>
+                    <div class="image" style="background-image:url(images/background/bg-4.jpg)"></div>
+                    <div class="image" style="background-image:url(images/background/bg-5.jpg)"></div>
+                    <div class="image" style="background-image:url(images/background/bg-6.jpg)"></div>
+                    <div class="image" style="background-image:url(images/background/bg-7.jpg)"></div>
+                </div>
+                <div id="particles-js" class="particles-pattern"></div>
+            </div>
+            <div class="scroll-box">
+                <div class="container" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+                    <div class="card-wrapper">
+                        <div class="card-inner-box">
+                            <header class="header wow fadeInLeft" data-wow-duration="1.5s">
+                                <ul class="main-menu">
+                                    <li class="active home"><a class="logo" href="#home"><img src="images\logo.png"
+                                                alt=""></a></li>
+                                    <li><a href="#about"><i class="icon-profile-male"></i>About</a></li>
+                                    <li><a href="#resume"><i class="icon-document"></i>Resume</a></li>
+                                    <li><a href="#work"><i class="icon-briefcase"></i>Works</a></li>
+                                    <li><a href="#services"><i class="icon-adjustments"></i>Services</a></li>
+                                    <li><a href="#blog"><i class="icon-chat"></i>Blog</a></li>
+                                    <li><a href="#contact"><i class="icon-global"></i>Contact</a></li>
+                                </ul>
+                            </header>
+
+                            <!-- Card Item -->
+                            <div class="card-home card-item active" id="home"
+                                style="background-image:url(images/background/bg-2.png)">
+
+                                <div class="card-inner wow fadeInUp" data-wow-duration="2s">
+                                    <div class="image"><img src="images\resource\user.png" alt=""></div>
+
+                                    <div class="author">
+                                        <h3>ABRAR A.</h3>
+                                        <div class="designation">
+                                            Hi i’m
+                                            <div class="typing-title">
+                                                <p>a <strong>Web Developer.</strong></p>
+                                                <p>a <strong>UI/UX Designer.</strong></p>
+                                                <p>a <strong>Presentation Designer.</strong></p>
+                                            </div>
+                                            <span class="typed-title"></span>
+                                        </div>
+                                    </div>
+                                    <ul class="social-icon-two">
+                                        <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                        <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                        <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                                        <li><a href="#"><span class="icon-rss"></span></a></li>
+                                        <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                                    </ul>
+                                    <div class="link-btn">
+                                        <a href="Resume - Abrar Ahmed.pdf" target="_blank" class="theme-btn btn-style-two">Download CV</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- End Item -->
+
+                            <!-- Card Item -->
+                            <div class="card-about card-item" id="about">
+                                <div class="card-inner">
+                                    <!-- About Info -->
+                                    <div class="about-info">
+                                        <h4 class="title">About Me</h4>
+                                        <div class="text">
+                                            <p>Hello! I’m Abrar Ahmed a self-taught & award winning Digital Designer &
+                                                Developer with over five years work experience. I started in my
+                                                children’s room, got pro at renowned digital agencies akij co and nork
+                                                blue lebel. Now I’m based in Jhang, Pakistan, working for Apple
+                                                fredmansky and enjoying the life in the countryside.</p>
+                                            <p>I have couple of hobbies but I like to travel. I have already travelled
+                                                almost all the districts of our country with my father. I am fond of
+                                                fruit.</p>
+                                        </div>
+                                        <div class="info-list">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <ul class="list-style-one">
+                                                        <li><strong><span class="far fa-user"></span>Name:</strong>
+                                                            Abrar Ahmed</li>
+                                                        <li><strong><span class="far fa-calendar"></span>Date of
+                                                                Birth:</strong> 31-03-1998</li>
+                                                        <li><strong><span
+                                                                    class="fas fa-paper-plane"></span>Address:</strong>
+                                                            General Bus Stand, Jhang</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <ul class="list-style-one">
+                                                        <li><strong><span class="far fa-envelope"></span>Email:</strong>
+                                                            abr.std7@gmail.com</li>
+                                                        <li><strong><span class="fas fa-phone"></span>Phone:</strong>
+                                                            (+92) 340 790 9920)</li>
+                                                        <li><strong><span
+                                                                    class="fas fa-laptop"></span>Freelance:</strong>
+                                                            Available</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Our Skills -->
+                                    <div class="our-skills">
+                                        <h4 class="title">Skills</h4>
+                                        <!--Progress Levels-->
+                                        <div class="progress-levels row">
+
+                                            <!--Skill Box-->
+                                            <div class="progress-box html wow fadeInRight col-sm-6"
+                                                data-wow-delay="1000ms" data-wow-duration="1500ms">
+                                                <div class="box-title">Presentation Design</div>
+                                                <div class="inner">
+                                                    <div class="bar">
+                                                        <div class="bar-innner">
+                                                            <div class="bar-fill" data-percent="88">
+                                                                <div class="percent"></div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Skill Box-->
+                                            <div class="progress-box wow fadeInRight col-sm-6" data-wow-delay="1000ms"
+                                                data-wow-duration="1500ms">
+                                                <div class="box-title">HTML5 & CSS3</div>
+                                                <div class="inner">
+                                                    <div class="bar">
+                                                        <div class="bar-innner">
+                                                            <div class="bar-fill" data-percent="92">
+                                                                <div class="percent"></div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Skill Box-->
+                                            <div class="progress-box php wow fadeInRight col-sm-6"
+                                                data-wow-delay="1200ms" data-wow-duration="1500ms">
+                                                <div class="box-title">JavaScript</div>
+                                                <div class="inner">
+                                                    <div class="bar">
+                                                        <div class="bar-innner">
+                                                            <div class="bar-fill" data-percent="96">
+                                                                <div class="percent"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Skill Box-->
+                                            <div class="progress-box wp wow fadeInRight col-sm-6"
+                                                data-wow-delay="1200ms" data-wow-duration="1500ms">
+                                                <div class="box-title">UI/UX Design</div>
+                                                <div class="inner">
+                                                    <div class="bar">
+                                                        <div class="bar-innner">
+                                                            <div class="bar-fill" data-percent="80">
+                                                                <div class="percent"></div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Testimonials -->
+                                    <div class="testimonials">
+                                        <h4 class="title">Testimonials</h4>
+                                        <div class="testimonial-carousel owl-carousel owl-theme">
+                                            <!-- Testimoinal Block -->
+                                            <div class="testimonial-block">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src="images\resource\author-1.jpg" alt="">
+                                                    </div>
+                                                    <div class="text">
+                                                        “Abrar has completed many design projects for me,
+                                                        his design skills are great and has an eagerness to work hard
+                                                        and hit deadlines.
+                                                        I would be happy to recommend Abrar as I have has nothing but a
+                                                        great experience working with him. Thank you :)”</div>
+                                                    <h5>Victoria Janes</h5>
+                                                </div>
+                                            </div>
+                                            <!-- Testimoinal Block -->
+                                            <div class="testimonial-block">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src="images\resource\author-2.jpg" alt="">
+                                                    </div>
+                                                    <div class="text">
+                                                        “Abrar was very nice and helpful, his attitude was wonderful and
+                                                        he did the job well in the shortest possible time. Good value
+                                                        for money too!
+                                                        I can recommend Abrar to everyone who wants to have a decent
+                                                        presentation and
+                                                        will work with him again.”</div>
+                                                    <h5>Yana Lapitskaya</h5>
+                                                </div>
+                                            </div>
+                                            <!-- Testimoinal Block -->
+                                            <div class="testimonial-block">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src="images\resource\author-3.jpg" alt="">
+                                                    </div>
+                                                    <div class="text">
+                                                        “Genuinely really pleased with how responsive and available
+                                                        Abrar always is,
+                                                        and he always delivers best quality work. I will continue to use
+                                                        Abrar for future work and recommend him to others. Thank you”
+                                                    </div>
+                                                    <h5>Doron Peleg</h5>
+                                                </div>
+                                            </div>
+                                            <!-- End Block -->
+                                        </div>
+                                    </div>
+                                    <!-- Client-logo -->
+                                    <div class="client-logo">
+                                        <h4 class="title">Client Partners</h4>
+                                        <ul class="client-carousel owl-carousel owl-theme">
+                                            <li><a href="#"><img src="images\resource\client-1.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images\resource\client-2.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images\resource\client-3.png" alt=""></a></li>
+                                            <li><a href="#"><img src="images\resource\client-4.png" alt=""></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fact-counter">
+                                        <h4 class="title">Client Partners</h4>
+                                        <div class="row">
+                                            <!--Column-->
+                                            <article class="column counter-column col-sm-3 col-xs-6 animated fadeIn"
+                                                data-wow-duration="100ms">
+                                                <div class="inner-box">
+                                                    <div class="count-outer count-box">
+                                                        <span class="count-text" data-speed="3000"
+                                                            data-stop="90">0</span>
+                                                        <p>Projects</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <!--Column-->
+                                            <article class="column counter-column col-sm-3 col-xs-6 animated fadeIn"
+                                                data-wow-duration="200ms">
+                                                <div class="inner-box">
+                                                    <div class="count-outer count-box">
+                                                        <span class="count-text" data-speed="3000"
+                                                            data-stop="5">0</span>
+                                                        <p>Awards</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <!--Column-->
+                                            <article class="column counter-column col-sm-3 col-xs-6 animated fadeIn"
+                                                data-wow-duration="300ms">
+                                                <div class="inner-box">
+                                                    <div class="count-outer count-box">
+                                                        <span class="count-text" data-speed="3000"
+                                                            data-stop="48">0</span>
+                                                        <p>Clients</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+
+                                            <!--Column-->
+                                            <article class="column counter-column col-sm-3 col-xs-6 animated fadeIn"
+                                                data-wow-duration="400ms">
+                                                <div class="inner-box">
+                                                    <div class="count-outer count-box">
+                                                        <span class="count-text" data-speed="3000"
+                                                            data-stop="4.9">0</span>
+                                                        <p>Ratings</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <!-- End -->
+                                </div>
+                            </div>
+                            <!-- End item -->
+
+                            <!-- Card item -->
+                            <div class="card-resume card-item" id="resume">
+                                <div class="card-inner">
+                                    <h4 class="title">Resume</h4>
+                                    <!--Column-->
+                                    <div class="timeline-column">
+                                        <div class="inner">
+                                            <div class="col-header">
+                                                <div class="icon-box">
+                                                    <span class="fas fa-graduation-cap"></span>
+                                                </div>
+                                                <h5>Education</h5>
+                                            </div>
+
+                                            <!--Timeline Block-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h5>BS - Software Engineering</h5>
+                                                    <div class="date">Apr 2016 - June 2020, Computer Sciences.</div>
+                                                    <div class="text">Virtual University of Pakistan - In final
+                                                        semester, holding a CGPA of 3.75/4.00, Learned Problem Solving
+                                                        Skills, Programming with C++, C#, Java, JavaScript, HTML5, CSS3,
+                                                        React.Js & Flutter for Mobile Development.</div>
+                                                </div>
+                                            </div>
+
+                                            <!--Timeline Block-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h5>ICS - Intermidate Computer Sciences</h5>
+                                                    <div class="date">Feb 2014 - Mar 2016, Computer Sciences,</div>
+                                                    <div class="text">Ghazali Science College, Jhang - Ranked as the
+                                                        Toper of the institute, Learned the basics of programming with C
+                                                        & C++, Studiet Object Oriented Programming and Developed basic
+                                                        Porblem Solving Skills.</div>
+                                                </div>
+                                            </div>
+
+                                            <!--Timeline Block-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h5>Art & Media Designing</h5>
+                                                    <div class="date">Jan 2016 - Feb 2018 | Digital Graphics.</div>
+                                                    <div class="text">Digiskills.pk & Ignites - Featured at
+                                                        Digiskills.pk Learned Advanced Graphic Designing skils and tools
+                                                        like Adobe Photoshope, Adobe Illustrator, Adobe XD(for UI/UX
+                                                        Designing) and CorelDraw Graphics Suite.</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!--Column-->
+                                    <div class="timeline-column">
+                                        <div class="inner">
+                                            <div class="col-header">
+                                                <div class="icon-box">
+                                                    <span class="fas fa-suitcase"></span>
+                                                </div>
+                                                <h5>Experience</h5>
+                                            </div>
+
+                                            <!--Timeline Block-->
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h5>UX Designer</h5>
+                                                    <div class="date">At Present, Freelancer.</div>
+                                                    <div class="text">Mint Monee is a Foreign Money Exchange Service,
+                                                        I've been working there as a UI/UX Designer, Pitch Deck Designer
+                                                        & Illustrator for more than 2 years and helping them
+                                                        successfully achieving their startup goals.</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h5>Front-End Developer</h5>
+                                                    <div class="date"> Jan 2018 - Present, Victoria Jane Assists.</div>
+                                                    <div class="text">Remotely working for Victoria Jane Assists since
+                                                        2018, Completed a number of Web Development and Web Designing
+                                                        Projects, created different digital illustrations as well.</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-block">
+                                                <div class="inner-box">
+                                                    <h5>Management Director</h5>
+                                                    <div class="date">Jan 2016 - Dec 2018, Suffah Islamic School.</div>
+                                                    <div class="text">Teaching Intermediate Level Students the basics of
+                                                        Object Oriencted Programming with an additional role as the
+                                                        Management Director of the institute.</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End item -->
+                            <!-- Card item -->
+                            <div class="card-projects card-item" id="work">
+                                <div class="card-inner masonry-gallery">
+                                    <h4 class="title">Works</h4>
+                                    <div class="row items-container">
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\1.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1SvrIh34fGpW6nvdFbAH48KLd8b8tx4P1vYeMptSPgRc/edit?usp=sharing"
+                                                            target="_blank">Open Gates</a></h5>
+                                                    <span>Pitch Deck</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\2.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1f39LXe1Mt94XOct1CKfI-YlhE3OPHJ6CobAwno4p36I/edit?usp=sharing"
+                                                            target="_blank">Score Genius</a></h5>
+                                                    <span>Pitch Deck</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\3.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1evYAwWKWHV0yb1PJRfQxjA9kreNqg9n6-xsPgM7CIlM/edit?usp=sharing"
+                                                            target="_blank">Gaia Enterprises</a></h5>
+                                                    <span>Presentation</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\4.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1ndGpQBKi19twYo_pLM2hzj5kLUjAMBd3OmDxdEhzRTs/edit?usp=sharing"
+                                                            target="_blank">SEO Audit</a></h5>
+                                                    <span>Proposal</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\5.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1oZ7Bu7G1ZfqU7ZsEQY9ZNbuzsBNTs064VztFjfpYHEk/edit?usp=sharing"
+                                                            target="_blank">iNvoli</a></h5>
+                                                    <span>Pitch Deck</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\6.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1CwfdwCfqUAfUqr_t_cYfbuE_1n51hkbC3XKxAPEG88g/edit?usp=sharing"
+                                                            target="_blank">Bar & Resturant</a></h5>
+                                                    <span>Proposal</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\7.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1_fJAup-d66Fkcp_L0jf5EfNd4PJcz_upO0UTDrCU0jA/edit?usp=sharing" target="_blank">Gradeon</a></h5>
+                                                    <span>Presentation</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\8.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1vOSSKQWSShAlh-iNV7QRWwOLDoxjXs-dq8XBufSEb-c/edit?usp=sharing" target="_blank">SEO</a></h5>
+                                                    <span>Proposal</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\9.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1PDHP7BNbuuOZIH62P4c26xxHUTL5gegLYnD_eXgngek/edit?usp=sharing" target="_blank">Template</a></h5>
+                                                    <span>Branding</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="projects-block col-md-6 col-sm-12 col-xs-12">
+                                            <div class="inner-box">
+                                                <figure class="image">
+                                                    <img src="images\gallery\10.png" alt="image">
+                                                </figure>
+                                                <div class="caption-title">
+                                                    <h5><a href="https://docs.google.com/presentation/d/1nsloG7vYarFwrVf_dzXYSqljLCem6qwYelbBwtyVimY/edit?usp=sharing" target="_blank">Green Lead</a></h5>
+                                                    <span>Branding</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End item -->
+                            <!-- Card item -->
+                            <div class="card-services card-item" id="services">
+                                <div class="card-inner">
+                                    <h4 class="title">Services</h4>
+                                    <div class="row">
+                                        <div class="services-block col-md-6">
+                                            <div class="inner-box hvr-float-shadow">
+                                                <div class="icon-box"><span class="icon-tools"></span></div>
+                                                <h4><a href="#">UI/UX Design</a></h4>
+                                                <div class="text">UI design is centered on layout and the fine detail of
+                                                    how the user interacts with the product.</div>
+                                            </div>
+                                        </div>
+                                        <div class="services-block col-md-6">
+                                            <div class="inner-box hvr-float-shadow">
+                                                <div class="icon-box"><span class="icon-layers"></span></div>
+                                                <h4><a href="#">App Designing</a></h4>
+                                                <div class="text">The weather started getting rough the tiny ship was
+                                                    tossed if not four of the fearless crew. </div>
+                                            </div>
+                                        </div>
+                                        <div class="services-block col-md-6">
+                                            <div class="inner-box hvr-float-shadow">
+                                                <div class="icon-box"><span class="icon-circle-compass"></span></div>
+                                                <h4><a href="#">Graphic Designing</a></h4>
+                                                <div class="text">The weather started getting rough the tiny ship was
+                                                    tossed if not four of the fearless crew. </div>
+                                            </div>
+                                        </div>
+                                        <div class="services-block col-md-6">
+                                            <div class="inner-box hvr-float-shadow">
+                                                <div class="icon-box"><span class="icon-aperture"></span></div>
+                                                <h4><a href="#">Logo & Identity</a></h4>
+                                                <div class="text">The weather started getting rough the tiny ship was
+                                                    tossed if not four of the fearless crew. </div>
+                                            </div>
+                                        </div>
+                                        <div class="services-block col-md-6">
+                                            <div class="inner-box hvr-float-shadow">
+                                                <div class="icon-box"><span class="icon-camera"></span></div>
+                                                <h4><a href="#">Photography</a></h4>
+                                                <div class="text">The weather started getting rough the tiny ship was
+                                                    tossed if not four of the fearless crew.</div>
+                                            </div>
+                                        </div>
+                                        <div class="services-block col-md-6">
+                                            <div class="inner-box hvr-float-shadow">
+                                                <div class="icon-box"><span class="icon-hotairballoon"></span></div>
+                                                <h4><a href="#">Branding</a></h4>
+                                                <div class="text">The weather started getting rough the tiny ship was
+                                                    tossed if not four of the fearless crew.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End item -->
+                            <!-- Card item -->
+                            <div class="card-blog card-item" id="blog">
+                                <div class="card-inner">
+                                    <h4 class="title">Blog</h4>
+                                    <div class="news-block">
+                                        <div class="inner-box">
+                                            <div class="image">
+                                                <img src="images\resource\blog-1.jpg" alt="">
+                                                <div class="overlay">
+                                                    <a class="link-btn" href="blog-single.html">
+                                                        <i class="icon-attachment"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="lower-content">
+                                                <div class="date"><span class="far fa-calendar"></span>06 May 2018</div>
+                                                <h5><a href="blog-single.html">Strokes to move the world be
+                                                        different</a></h5>
+                                                <div class="text">The weather started getting rough the tiny ship was
+                                                    tossed if not for the courage of the feared join us here each week
+                                                    my friends.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-block">
+                                        <div class="inner-box">
+                                            <div class="image">
+                                                <img src="images\resource\blog-2.jpg" alt="">
+                                                <div class="overlay">
+                                                    <a class="link-btn" href="blog-single.html">
+                                                        <i class="icon-attachment"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="lower-content">
+                                                <div class="date"><span class="far fa-calendar"></span>06 May 2018</div>
+                                                <h5><a href="blog-single.html">Flying away on a wing and a prayer</a>
+                                                </h5>
+                                                <div class="text">The weather started getting rough the tiny ship was
+                                                    tossed if not for the courage of the feared join us here each week
+                                                    my friends.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-block">
+                                        <div class="inner-box">
+                                            <div class="image">
+                                                <img src="images\resource\blog-3.jpg" alt="">
+                                                <div class="overlay">
+                                                    <a class="link-btn" href="blog-single.html">
+                                                        <i class="icon-attachment"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="lower-content">
+                                                <div class="date"><span class="far fa-calendar"></span>06 May 2018</div>
+                                                <h5><a href="blog-single.html">Tropic port aboard this tiny ship</a>
+                                                </h5>
+                                                <div class="text">The weather started getting rough the tiny ship was
+                                                    tossed if not for the courage of the feared join us here each week
+                                                    my friends.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End item -->
+                            <!-- Card item -->
+                            <div class="card-contact card-item" id="contact">
+                                <div class="card-inner">
+                                    <h4 class="title">Contact Us</h4>
+                                    <div class="map-section">
+                                        <!--Map Outer-->
+                                        <div class="map-outer">
+                                            <!--Map Canvas-->
+                                            <div class="map-canvas" data-zoom="12" data-lat="31.2655"
+                                                data-lng="72.3124" data-type="roadmap" data-hue="#ffc400"
+                                                data-title="Envato" data-icon-path="images/icons/map-marker.png"
+                                                data-content="Jhang Sadar, Pakistan<br><a href='mailto:abr.std7@gmail.com'>abr.std7@gmail.com</a>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Contact Form -->
+                                    <div class="contact-form">
+                                        <!--Comment Form-->
+                                        <form method="post" action="sendemail.php" id="contact-form">
+                                            <div class="row clearfix">
+
+                                                <div class="col-md-6 form-group">
+                                                    <input type="text" name="username" placeholder="Name" required="">
+                                                </div>
+
+                                                <div class="col-md-6 form-group">
+                                                    <input type="email" name="email" placeholder="Email" required="">
+                                                </div>
+
+                                                <div class="col-lg-12 col-md-12 form-group">
+                                                    <textarea name="message" placeholder="Message"></textarea>
+                                                </div>
+
+                                                <div class="col-lg-12 col-md-12 form-group">
+                                                    <button class="theme-btn btn-style-two" type="submit"
+                                                        name="submit-form">Submit Now </button>
+                                                </div>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <!--End Contact Form -->
+
+                                </div>
+                            </div>
+                            <!-- End item -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--End pagewrapper-->
+
+
+    <script src="js\jquery.js"></script>
+
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js\owl.js"></script>
+    <script src="js\wow.js"></script>
+    <script src="js\appear.js"></script>
+    <script src="js\validate.js"></script>
+    <script src="js\pagenav.js"></script>
+    <script src="js\jquery-type.js"></script>
+    <script src="js\isotope.js"></script>
+    <script src="js\particles.js"></script>
+    <script src="js\particles-script.js"></script>
+    <script src="js\jquery.background-video.js"></script>
+    <script src="js\script.js"></script>
+
+    <!--Google Map APi Key-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk25E4mNfVIEt3tNl3K1HwNZVruVoFBlA"></script>
+    <script src="js\map-script.js"></script>
+    <!--End Google Map APi-->
+
+</body>
+
 </html>
