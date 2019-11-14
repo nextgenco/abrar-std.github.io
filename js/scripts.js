@@ -677,7 +677,7 @@ function initNastik() {
             TweenMax.to('.element-item ', 0.4, {
                 borderColor: 'transparent',
                 scale: 0.5,
-                background: "#F68338",
+                background: "#00b712",
                 opacity: 0.6,
                 left: 0,
                 top: 0
@@ -686,7 +686,7 @@ function initNastik() {
         },
         mouseleave: function () {
             TweenMax.to('.element-item ', 0.4, {
-                borderColor: '#F68338',
+                borderColor: '#00b712',
                 scale: 1.0,
                 background: "none",
                 opacity: 1,
@@ -710,7 +710,7 @@ function initNastik() {
             TweenMax.to('.element-item ', 0.4, {
                 transformOrigin: '30px 30px',
                 borderWidth: '2px',
-                borderColor: '#F68338',
+                borderColor: '#00b712',
                 scale: 1.0,
                 left: 0,
                 top: 0
@@ -723,7 +723,7 @@ function initNastik() {
             TweenMax.to('.element-item ', 0.4, {
                 transformOrigin: '35px 35px',
                 borderWidth: '1px',
-                borderColor: '#F68338',
+                borderColor: '#00b712',
                 scale: 1.8,
                 left: 23,
                 top: 23
@@ -734,7 +734,7 @@ function initNastik() {
             TweenMax.to('.element-item ', 0.4, {
                 transformOrigin: '30px 30px',
                 borderWidth: '2px',
-                borderColor: '#F68338',
+                borderColor: '#00b712',
                 scale: 1.0,
                 left: 0,
                 top: 0
@@ -747,7 +747,7 @@ function initNastik() {
             TweenMax.to('.element-item ', 0.4, {
                 transformOrigin: '35px 35px',
                 borderWidth: '1px',
-                borderColor: '#F68338',
+                borderColor: '#00b712',
                 scale: 1.8,
                 left: 23,
                 top: 23
@@ -757,7 +757,7 @@ function initNastik() {
     $(".gallery-item   .box-media-zoom , .gallery-item .thumb-info").on({
         mouseleave: function () {
             TweenMax.to('.element-item ', 0.4, {
-                borderColor: '#F68338',
+                borderColor: '#00b712',
             });
         }
     });
