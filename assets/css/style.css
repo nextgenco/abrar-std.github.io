@@ -4019,6 +4019,7 @@ ul {
 .mccan-timeline > li .mccan-timeline-content p {
     margin-top: 5px;
     margin-bottom: 0;
+    width: 80%;
 }
 
 .mccan-timeline > li .mccan-timeline-content .mccan-timeline-date {
@@ -4054,7 +4055,7 @@ ul {
     left: 0;
     width: 100%;
     right: 0;
-    background: rgba(246, 131, 56, 0.8);
+    background: rgba(50, 250, 50, 0.8);
     opacity: 0;
     -webkit-transition: .3s;
     -o-transition: .3s;
