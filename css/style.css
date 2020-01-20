@@ -27,18 +27,19 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: #FF4500;
+  background: #0A79DF;
+  
 }
 ::selection {
-  background-color: #FF4500;
+  background-color: #0A79DF;
   color: #fff;
 }
 -webkit-::selection {
-  background-color: #FF4500;
+  background-color: #0A79DF;
   color: #fff;
 }
 ::-moz-selection {
-  background-color: #FF4500;
+  background-color: #0A79DF;
   color: #fff;
 }
 h1,
@@ -144,7 +145,7 @@ blockquote {
   padding: 0;
   width: 80%;
   padding-left: 6.8rem;
-  border-left: 0.3rem solid #FF4500;
+  border-left: 0.3rem solid #0A79DF;
   margin-top: 5rem;
   color: #fff;
 }
@@ -156,13 +157,13 @@ cite {
   font-style: normal;
 }
 a {
-  color: #FF4500;
+  color: #0A79DF;
   -webkit-transition: color 0.3s ease-out;
   -o-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
 a:hover {
-  color: #FF4500;
+  color: #0A79DF;
   outline: none;
 }
 a:focus {
@@ -208,7 +209,7 @@ input[type="email"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
-  border-color: #FF4500;
+  border-color: #0A79DF;
   outline: 0;
   color: #fff;
 }
@@ -247,7 +248,7 @@ label.error {
   border: 0;
   border-radius: 0;
   padding: 1.1em 2.28em 1em;
-  background-color: #FF4500;
+  background-color: #0A79DF;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-out !important;
   transition: all 0.3s ease-out !important;
@@ -279,8 +280,8 @@ label.error {
   transition: all 0.3s ease-out;
 }
 .ion-ios-play:hover {
-  color: #FF4500;
-  border: 1px solid #FF4500;
+  color: #0A79DF;
+  border: 1px solid #0A79DF;
 }
 .ion-ios-play:after {
   content: "";
@@ -329,7 +330,7 @@ label.error {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #FF4500;
+  background-color: #0A79DF;
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -368,7 +369,7 @@ label.error {
   color: #fff;
 }
 .text-primary {
-  color: #FF4500 !important;
+  color: #0A79DF !important;
 }
 .masked {
   position: relative;
@@ -484,7 +485,7 @@ a.brand:focus {
   margin-top: 4px;
 }
 .navbar-toggle:hover .icon-bar {
-  background-color: #FF4500;
+  background-color: #0A79DF;
 }
 .navbar .social-list {
   float: right;
@@ -512,7 +513,7 @@ a.brand:focus {
   margin-left: 0;
 }
 .social-list a:hover {
-  color: #FF4500;
+  color: #0A79DF;
   text-decoration: none;
 }
 .navbar-spacer {
@@ -595,7 +596,7 @@ a.brand:focus {
   transition: all 0.3s ease;
 }
 .close-menu:hover {
-  color: #FF4500;
+  color: #0A79DF;
 }
 .menu-list {
   opacity: 0;
@@ -675,7 +676,7 @@ a.brand:focus {
   margin-right: 0;
 }
 .menu-footer .social-list a:hover {
-  color: #FF4500;
+  color: #0A79DF;
 }
 .menu-footer .copy {
   opacity: 0;
@@ -794,7 +795,7 @@ a.brand:focus {
 #pp-nav .pp-nav-down:hover,
 #pp-nav.white .pp-nav-up:hover,
 #pp-nav.white .pp-nav-down:hover {
-  color: #FF4500;
+  color: #0A79DF;
 }
 #pp-nav.white .pp-nav-up,
 #pp-nav.white .pp-nav-down {
@@ -813,7 +814,7 @@ a.brand:focus {
 #pp-nav li .active span,
 .pp-slidesNav .active span {
   opacity: 1;
-  background: #FF4500;
+  background: #0A79DF; 
   transform: scale(1.6);
 }
 .pagepiling .section {
@@ -969,7 +970,7 @@ a.brand:focus {
 }
 .icon-specialization {
   font-size: 5rem;
-  color: #FF4500;
+  color: #0A79DF;
 }
 .row-specialization {
   margin: 0 -2rem;
@@ -1012,7 +1013,7 @@ a.brand:focus {
   transition: background 0.5s, top 0.5s;
 }
 .col-resume:hover {
-  background: #FF4500;
+  background: #0A79DF; 
 }
 .resume-type {
   font-family: montserrat, sans-serif;
@@ -1125,7 +1126,7 @@ a.brand:focus {
   width: 100%;
 }
 .progress-bar {
-  background-color: #FF4500;
+  background-color: #0A79DF;
   height: 100%;
 }
 .progress-bars .number {
@@ -1259,7 +1260,7 @@ a.brand:focus {
   margin-right: 2rem;
 }
 .view-all a:hover {
-  color: #FF4500;
+  color: #0A79DF;
   text-decoration: none;
 }
 @media (min-width: 768px) {
@@ -1455,7 +1456,7 @@ a.brand:focus {
   border-radius: 50%;
 }
 .owl-dot.active span {
-  background: #FF4500;
+  background: #0A79DF; /* fallback for old browsers */
   transform: scale(1.4);
 }
 .content {
