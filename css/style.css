@@ -27,19 +27,19 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: #0A79DF;
+  background: #00ff00;
   
 }
 ::selection {
-  background-color: #0A79DF;
+  background-color: #00ff00;
   color: #fff;
 }
 -webkit-::selection {
-  background-color: #0A79DF;
+  background-color: #00ff00;
   color: #fff;
 }
 ::-moz-selection {
-  background-color: #0A79DF;
+  background-color: #00ff00;
   color: #fff;
 }
 h1,
@@ -145,7 +145,7 @@ blockquote {
   padding: 0;
   width: 80%;
   padding-left: 6.8rem;
-  border-left: 0.3rem solid #0A79DF;
+  border-left: 0.3rem solid #00ff00;
   margin-top: 5rem;
   color: #fff;
 }
@@ -157,13 +157,13 @@ cite {
   font-style: normal;
 }
 a {
-  color: #0A79DF;
+  color: #00ff00;
   -webkit-transition: color 0.3s ease-out;
   -o-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
 }
 a:hover {
-  color: #0A79DF;
+  color: #00ff00;
   outline: none;
 }
 a:focus {
@@ -209,7 +209,7 @@ input[type="email"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
-  border-color: #0A79DF;
+  border-color: #00ff00;
   outline: 0;
   color: #fff;
 }
@@ -248,7 +248,7 @@ label.error {
   border: 0;
   border-radius: 0;
   padding: 1.1em 2.28em 1em;
-  background-color: #0A79DF;
+  background-color: #00ff00;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-out !important;
   transition: all 0.3s ease-out !important;
@@ -280,8 +280,8 @@ label.error {
   transition: all 0.3s ease-out;
 }
 .ion-ios-play:hover {
-  color: #0A79DF;
-  border: 1px solid #0A79DF;
+  color: #00ff00;
+  border: 1px solid #00ff00;
 }
 .ion-ios-play:after {
   content: "";
@@ -330,7 +330,7 @@ label.error {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #0A79DF;
+  background-color: #00ff00;
   opacity: 0.6;
   position: absolute;
   top: 0;
@@ -369,7 +369,7 @@ label.error {
   color: #fff;
 }
 .text-primary {
-  color: #0A79DF !important;
+  color: #00ff00 !important;
 }
 .masked {
   position: relative;
@@ -485,7 +485,7 @@ a.brand:focus {
   margin-top: 4px;
 }
 .navbar-toggle:hover .icon-bar {
-  background-color: #0A79DF;
+  background-color: #00ff00;
 }
 .navbar .social-list {
   float: right;
@@ -513,7 +513,7 @@ a.brand:focus {
   margin-left: 0;
 }
 .social-list a:hover {
-  color: #0A79DF;
+  color: #00ff00;
   text-decoration: none;
 }
 .navbar-spacer {
@@ -596,7 +596,7 @@ a.brand:focus {
   transition: all 0.3s ease;
 }
 .close-menu:hover {
-  color: #0A79DF;
+  color: #00ff00;
 }
 .menu-list {
   opacity: 0;
@@ -676,7 +676,7 @@ a.brand:focus {
   margin-right: 0;
 }
 .menu-footer .social-list a:hover {
-  color: #0A79DF;
+  color: #00ff00;
 }
 .menu-footer .copy {
   opacity: 0;
@@ -795,7 +795,7 @@ a.brand:focus {
 #pp-nav .pp-nav-down:hover,
 #pp-nav.white .pp-nav-up:hover,
 #pp-nav.white .pp-nav-down:hover {
-  color: #0A79DF;
+  color: #00ff00;
 }
 #pp-nav.white .pp-nav-up,
 #pp-nav.white .pp-nav-down {
@@ -814,7 +814,7 @@ a.brand:focus {
 #pp-nav li .active span,
 .pp-slidesNav .active span {
   opacity: 1;
-  background: #0A79DF; 
+  background: #00ff00; 
   transform: scale(1.6);
 }
 .pagepiling .section {
@@ -970,7 +970,7 @@ a.brand:focus {
 }
 .icon-specialization {
   font-size: 5rem;
-  color: #0A79DF;
+  color: #00ff00;
 }
 .row-specialization {
   margin: 0 -2rem;
@@ -1013,7 +1013,7 @@ a.brand:focus {
   transition: background 0.5s, top 0.5s;
 }
 .col-resume:hover {
-  background: #0A79DF; 
+  background: #00ff00; 
 }
 .resume-type {
   font-family: montserrat, sans-serif;
@@ -1126,7 +1126,7 @@ a.brand:focus {
   width: 100%;
 }
 .progress-bar {
-  background-color: #0A79DF;
+  background-color: #00ff00;
   height: 100%;
 }
 .progress-bars .number {
@@ -1260,7 +1260,7 @@ a.brand:focus {
   margin-right: 2rem;
 }
 .view-all a:hover {
-  color: #0A79DF;
+  color: #00ff00;
   text-decoration: none;
 }
 @media (min-width: 768px) {
@@ -1456,7 +1456,7 @@ a.brand:focus {
   border-radius: 50%;
 }
 .owl-dot.active span {
-  background: #0A79DF; /* fallback for old browsers */
+  background: #00ff00; /* fallback for old browsers */
   transform: scale(1.4);
 }
 .content {
