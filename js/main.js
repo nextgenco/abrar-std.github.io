@@ -25,15 +25,6 @@ $(document).ready( function() {
     }
         
 
-// SUBMENU
-$('.hassub i').on('click',function(){
-    $(this).parent('.hassub').children('.submenu').slideToggle();
-});
-
-$('.nav-icon').on('click',function(){
-    $('.submenu').slideUp();
-});
-
     // MAGNIFIC POPUP FOR PORTFOLIO PAGE
     // $('.magnif').magnificPopup({
     //     type:'image',

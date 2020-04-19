@@ -225,7 +225,6 @@ header{
     padding: 11px 45px;
     text-decoration: none;
     /* Old browsers */
-    background: linear-gradient(to right, #ea0026 50%, white  50%);
     background-size: 202% 100%;
     background-position:right bottom;
     margin-left:10px;
@@ -426,7 +425,6 @@ header{
     color: #000;
     text-align: left;
     font-size: 16px;
-    background: #000;
     border-radius: 8px;
 }
 
@@ -458,7 +456,7 @@ header{
     right: 0;
 }
 
-.cbp-item figure:after {
+.cbp-item figure:after{
     content: '';
     background-color: rgba(255, 255, 255, 0.65);
     -webkit-transition: all 0.35s ease;
@@ -521,12 +519,10 @@ header{
     color: #000 !important;
     font-family: 'Montserrat', sans-serif !important;
     border-radius: 50px;
-    background: linear-gradient(to right, #ea0026 50%, white  50%);
     background-size: 202% 100%;
     background-position:right bottom;
     margin-left:10px;
     transition:all 1s ease !important;
-
 }
 
 .cbp-l-loadMore:hover{
@@ -1123,7 +1119,6 @@ footer .getintouch strong{
     font-size: 22px;
     font-weight: bold;
     letter-spacing: -1px;
-    line-height: 35px;
 }
 
 .owl-carousel.work-areas .area i:before{

@@ -7,7 +7,7 @@
     color: #ea0026;
 }
 
-.full-open .nav-icon:hover span, .owl-carousel.work-areas .area .line, .owl-theme .owl-controls .owl-page.active span, .site-btn2:hover{
+.full-open .nav-icon:hover span, .owl-carousel.work-areas .area .line, .owl-theme .owl-controls .owl-page.active span, .site-btn2:hover, .cbp-item figure{
 	background: #ea0026 !important;
 }
 
@@ -24,10 +24,9 @@ input.inp:focus, textarea.form-message:focus{
 	border-color: #ea0026;
 }
 
-
-
-
-
+.cbp-l-loadMore-link, .site-btn{
+	background: linear-gradient(to right, #ea0026 50%, #ffffff00 50%);
+}
 
 
 
